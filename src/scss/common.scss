@@ -4,6 +4,10 @@
   @include adaptiveValue("font-size", 48, 28);
   font-weight: 600;
   line-height: 100%; /* 100% */
+
+  span {
+    color: #1e76fe;
+  }
 }
 .text {
   @include adaptiveValue("font-size", 20, 18);
@@ -14,6 +18,24 @@
     &:not(:last-child) {
       margin-bottom: toRem(15);
     }
+  }
+
+  mark {
+    background-color: #1e76fe;
+    color: #fff;
+    text-align: center;
+    @include adaptiveValue("font-size", 16, 14);
+    font-weight: 500;
+    line-height: 118%; /* 118.75% */
+    padding-top: toRem(5);
+    padding-bottom: toRem(5);
+    @include adaptiveValue("padding-right", 40, 20);
+    @include adaptiveValue("padding-left", 40, 20);
+    border-radius: toRem(40);
+    display: block;
+    width: max-content;
+    margin: toRem(10) 0;
+    vertical-align: middle;
   }
 }
 
