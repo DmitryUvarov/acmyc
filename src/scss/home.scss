@@ -295,11 +295,39 @@
     }
   }
 }
-.about {
-  &__title {
+
+//========================================================================================================================================================
+
+.expert {
+  @include adaptiveValue("padding-top", 65, 35);
+  @include adaptiveValue("padding-bottom", 65, 35);
+
+  &__body {
+    background-color: #e3e3e3;
+    border-radius: toRem(26);
+    display: grid;
+    column-gap: toRem(10);
+    row-gap: toRem(20);
+    @media (min-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    padding: toRem(35) toRem(30) toRem(45);
+
+    @media (max-width: $mobile) {
+      padding: toRem(25) toRem(15) toRem(30);
+    }
   }
-}
-.title {
-}
-.title-2 {
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 30, 20);
+  }
+
+  &__title-2 {
+    @include adaptiveValue("font-size", 32, 20);
+  }
+
+  &__text {
+    max-width: toRem(500);
+  }
 }
