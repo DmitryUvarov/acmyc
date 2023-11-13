@@ -9,6 +9,12 @@
   @include adaptiveValue("font-size", 20, 18);
   font-weight: 500;
   line-height: 120%; /* 24/20 */
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
 }
 
 .title-2 {

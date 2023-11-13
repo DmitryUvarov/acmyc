@@ -331,3 +331,43 @@
     max-width: toRem(500);
   }
 }
+
+//========================================================================================================================================================
+
+.readmore-block {
+  @include adaptiveValue("padding-top", 65, 35);
+  @include adaptiveValue("padding-bottom", 65, 35);
+  &__container {
+  }
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 30, 20);
+    @media (max-width: $mobile) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__body {
+    display: grid;
+    @include adaptiveValue("column-gap", 40, 15, 0, 1230, 991);
+    row-gap: toRem(20);
+    @media (min-width: $mobile) {
+      grid-template-columns: percent(615, 1200) 1fr;
+    }
+  }
+
+  &__image-ibg {
+    height: fit-content;
+    border-radius: toRem(25);
+    overflow: hidden;
+    padding-bottom: percent(508, 615);
+  }
+
+  &__button {
+    width: 100%;
+    @include adaptiveValue("min-height", 66, 48);
+    margin-top: toRem(30);
+  }
+}
