@@ -1,3 +1,124 @@
 //====================================================================================================
+.footer {
+  @include adaptiveValue("padding-top", 65, 35);
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    @include adaptiveValue("column-gap", 45, 15, 0, 1230, 991);
+    row-gap: toRem(20);
+    border-radius: toRem(25);
+    background-color: #0f0f0f;
+
+    @include adaptiveValue("padding-top", 40, 25);
+    @include adaptiveValue("padding-bottom", 40, 45);
+    @include adaptiveValue("padding-right", 30, 15);
+    @include adaptiveValue("padding-left", 30, 15);
+
+    @media (max-width: $pc) {
+      justify-content: space-between;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+  }
+
+  &__content-body {
+    display: flex;
+    gap: toRem(25);
+
+    @media (max-width: $pc) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: block;
+    max-width: toRem(100);
+    margin-bottom: toRem(22);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    max-width: toRem(370);
+    width: fit-content;
+    color: #fff;
+    @include adaptiveValue("font-size", 53, 30, 0, 1230, 991);
+    font-weight: 600;
+    line-height: 100%; /* 100% */
+  }
+
+  &__list {
+  }
+
+  &__item {
+    color: #fff;
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: 19px; /* 118.75% */
+
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: toRem(8);
+  }
+
+  &__link {
+    display: block;
+    color: #fff;
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: 118%; /* 118.75% */
+  }
+
+  a {
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #1e76fe;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    @include adaptiveValue("font-size", 20, 18);
+    font-weight: 500;
+    line-height: 31px; /* 155% */
+    margin-bottom: toRem(13);
+    @include adaptiveValue("margin-top", 30, 15);
+  }
+
+  &__map {
+    @media (min-width: $pc) {
+      flex: 0 0 percent(480, 1200);
+    }
+
+    @media (max-width: $pc) and (min-width: $mobile) {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__map-image-ibg {
+    padding-bottom: percent(280, 450);
+
+    &:not(:last-child) {
+      margin-bottom: toRem(30);
+    }
+  }
+}
 
 //====================================================================================================
