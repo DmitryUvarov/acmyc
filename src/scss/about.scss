@@ -1,0 +1,143 @@
+.maindoctor {
+  @include adaptiveValue("padding-top", 65, 35);
+  @include adaptiveValue("padding-bottom", 65, 35);
+  &__container {
+  }
+
+  &__body {
+    display: grid;
+    gap: toRem(10);
+
+    @media (min-width: $mobile) {
+      grid-template-columns: percent(615, 1200) 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: toRem(30);
+  }
+
+  &__info {
+    border-radius: toRem(30);
+    background: #e3e3e3;
+
+    @include adaptiveValue("padding-top", 40, 25, 0, 1230, 767);
+    @include adaptiveValue("padding-left", 30, 15, 0, 1230, 767);
+    @include adaptiveValue("padding-right", 30, 15, 0, 1230, 767);
+    padding-bottom: toRem(20);
+  }
+
+  &__image-ibg {
+    border-radius: toRem(25);
+    overflow: hidden;
+
+    padding-bottom: 100%;
+    margin-bottom: toRem(15);
+
+    @media (min-width: $tablet) {
+      width: 75%;
+      padding-bottom: percent(416, 555);
+    }
+  }
+
+  &__name {
+    @include adaptiveValue("font-size", 20, 18);
+    font-weight: 600;
+    line-height: 100%; /* 100% */
+  }
+
+  &__place {
+    color: rgba(15, 15, 15, 0.3);
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: 100%; /* 100% */
+  }
+
+  &__content {
+    @include adaptiveValue("padding-top", 40, 25, 0, 1230, 767);
+    @include adaptiveValue("padding-left", 30, 15, 0, 1230, 767);
+    @include adaptiveValue("padding-right", 30, 15, 0, 1230, 767);
+    padding-bottom: toRem(20);
+    border-radius: toRem(30);
+    background: #e3e3e3;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title-2 {
+    @include adaptiveValue("margin-bottom", 30, 20);
+  }
+
+  &__text {
+    margin-bottom: toRem(25);
+  }
+
+  &__button {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+
+//========================================================================================================================================================
+
+.reviews {
+  @include adaptiveValue("padding-top", 65, 35);
+  @include adaptiveValue("padding-bottom", 65, 35);
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: toRem(30);
+  }
+
+  &__items {
+    @include adaptiveValue("padding-top", 45, 30, 0, 1230, 991);
+    @include adaptiveValue("padding-bottom", 45, 30, 0, 1230, 991);
+    @include adaptiveValue("padding-left", 30, 15, 0, 1230, 991);
+    @include adaptiveValue("padding-right", 30, 15, 0, 1230, 991);
+    border-radius: toRem(25);
+    background: #eeeef4;
+    display: grid;
+    @include adaptiveValue("gap", 30, 15);
+    grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+  }
+
+  &__item {
+    border-radius: toRem(25);
+    background: #fff;
+
+    padding: toRem(30) toRem(20);
+  }
+  &__item-title {
+    @include adaptiveValue("font-size", 20, 18);
+    font-weight: 600;
+    line-height: 100%; /* 100% */
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(7);
+
+    margin-bottom: toRem(18);
+  }
+
+  &__date {
+    font-size: toRem(12);
+    line-height: 125%; /* 125% */
+  }
+
+  &__text {
+  }
+
+  &__button {
+    margin-top: toRem(18);
+    @include adaptiveValue("min-height", 66, 48);
+    width: 100%;
+  }
+}
+.title {
+}
+.button {
+}

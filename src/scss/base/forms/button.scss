@@ -5,7 +5,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0px toRem(40);
+  padding: toRem(5) toRem(40);
   border-radius: 60px;
   background: #1e76fe;
 
@@ -27,5 +27,16 @@
   }
   &--fw {
     width: 100%;
+  }
+
+  &_gray {
+    background-color: #fff;
+    color: #1e76fe;
+    @media (any-hover: hover) {
+      &:hover {
+        background: #1e76fe;
+        color: #fff;
+      }
+    }
   }
 }

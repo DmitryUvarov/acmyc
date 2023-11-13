@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">О клинике</h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/01.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Качество – главный принцип нашей работы</h3>
+                                <div class="about__text text-2">Мы работаем таким образом, чтобы сделать процесс лечения зубов для пациентов, комфортным и максимально эффективным.</div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Современное оборудование и материалы</div>
+                                <div class="about__item">Приятная атмосфера в клинике</div>
+                                <div class="about__item">Удобный график работы</div>
+                                <div class="about__item">Опытные стоматологи</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="maindoctor">
+                <div class="maindoctor__container">
+                    <h2 class="maindoctor__title title">Главный врач клиники </h2>
+                    <div class="maindoctor__body">
+                        <div class="maindoctor__info">
+                            <div class="maindoctor__image-ibg"><img src="@img/about/01.jpg" alt=""></div>
+                            <div class="maindoctor__name">Собир Махамадалиев</div>
+                            <div class="maindoctor__place">Стоматолог, главный врач клиники</div>
+                        </div>
+                        <div class="maindoctor__content">
+                            <h3 class="maindoctor__title-2 title-2">Главный врач клиники Asmus несет ответственность за здоровье и улыбки пациентов</h3>
+                            <div class="maindoctor__text text-2">Собир Мухаммадалиев является экспертом в своей области <br> и всегда следит за последними тенденциями <br> и инновациями в стоматологии</div>
+                            <button class="maindoctor__button button button_gray">Записаться на прием к главному врачу</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__container">
+                    <h2 class="services__title title">Услуги</h2>
+                    <div class="services__body">
+                        <div class="services__content">
+                            <h3 class="services__title-2 title-2">Клиника Asmus предоставляет все виды стоматологических услуг <mark>Лечение без боли </mark> </h3>
+                        </div>
+                        <div class="services__items">
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Имплантация</div>
+                                <div class="services__item-ico"><img src="@img/services/01.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Хирургическое лечение</div>
+                                <div class="services__item-ico"><img src="@img/services/02.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Ортопедическое лечение</div>
+                                <div class="services__item-ico"><img src="@img/services/03.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Терапевтическое лечение</div>
+                                <div class="services__item-ico"><img src="@img/services/04.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Гигиена полости рта</div>
+                                <div class="services__item-ico"><img src="@img/services/05.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Ортодонтическое лечение</div>
+                                <div class="services__item-ico"><img src="@img/services/06.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Компьютерная томография</div>
+                                <div class="services__item-ico"><img src="@img/services/07.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services__contact contact">
+                        <div class="contact__body">
+                            <div class="contact__content">
+                                <h3 class="contact__title title-2">Хотите получить профессиональное лечение зубов от опытных специалистов?</h3>
+                                <div class="contact__text text-2">Оставьте свои контактные данные <br> и мы с радостью ответим на все ваши вопросы <br> и запишем вас на прием</div>
+                            </div>
+                            <form data-dev action="#" class="contact__form form-contact">
+                                <input autocomplete="off" type="text" name="form[]" data-required placeholder="Ваше имя" class="form-contact__input input">
+                                <input autocomplete="off" type="text" name="form[]" data-phone data-required="phone" placeholder="Ваш номер телефона" class="form-contact__input input">
+                                <input autocomplete="off" type="text" name="form[]" placeholder="Какая услуга вам требуется" class="form-contact__input input">
+                                <button type="submit" class="form-contact__button button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="reviews">
+                <div class="reviews__container">
+                    <h2 class="reviews__title title">Отзывы</h2>
+                    <div class="reviews__items">
+                        <div class="reviews__item">
+                            <div class="reviews__top">
+                                <h4 class="reviews__item-title">Дмитрий Иванов</h4>
+                                <div class="reviews__date">15.12.2022</div>
+                            </div>
+                            <div class="reviews__text text-2">
+                                Хорошая клиника, быстро принимают, запись по телефону свой личный врач который все по полочкам расскажет все интересующие вас вопросы. Рекомендую клинику.
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__top">
+                                <h4 class="reviews__item-title">Александр Новиков</h4>
+                                <div class="reviews__date">17.09.2022</div>
+                            </div>
+                            <div class="reviews__text text-2">
+                                Клиника работает допоздна. Приняли в 12 ночи с острой зубной болью. Всё вылечили и по приемлемой цене. В дальнейшем буду обращаться сюда. Спасибо!
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__top">
+                                <h4 class="reviews__item-title">Валентина Миронова</h4>
+                                <div class="reviews__date">19.06.2022</div>
+                            </div>
+                            <div class="reviews__text text-2">
+                                Так как мне нужно было ставить импланты я ответственно подходила к выбору стоматологии и доктора. И теперь не жалею что остановила свой выбор именно на этой стоматологии.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="reviews__button button">Еще отзывы</button>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

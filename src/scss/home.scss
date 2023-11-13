@@ -134,7 +134,7 @@
     display: grid;
     gap: toRem(10);
     @media (min-width: $mobile) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: percent(615, 1200) 1fr;
     }
   }
 
@@ -224,7 +224,7 @@
     display: grid;
     gap: toRem(10);
     @media (min-width: $mobile) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: percent(615, 1200) 1fr;
     }
   }
 
@@ -309,7 +309,7 @@
     column-gap: toRem(10);
     row-gap: toRem(20);
     @media (min-width: $mobile) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: percent(615, 1200) 1fr;
     }
 
     padding: toRem(35) toRem(30) toRem(45);
