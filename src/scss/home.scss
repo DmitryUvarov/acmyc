@@ -209,7 +209,15 @@
 .services {
   @include adaptiveValue("padding-top", 65, 35);
   @include adaptiveValue("padding-bottom", 65, 35);
+
   &__container {
+    display: grid;
+    @include adaptiveValue("gap", 30, 15);
+  }
+
+  &__contact {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__body {
