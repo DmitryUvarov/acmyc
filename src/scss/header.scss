@@ -90,6 +90,8 @@
     @media (min-width: $mobile) {
       display: none;
     }
+    position: relative;
+    z-index: 5;
     width: toRem(40);
     height: toRem(40);
     display: flex;

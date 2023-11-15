@@ -126,6 +126,7 @@ body::after {
     font-weight: 600;
     line-height: 120%; /* 120% */
     padding: toRem(5) 0;
+    border-radius: 0 !important;
 
     border-bottom: toRem(1) solid #e3e3e3;
     background-color: transparent;
