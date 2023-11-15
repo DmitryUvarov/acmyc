@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Зуботехническая лаборатория"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title title_white">Собственная зуботехническая <br> лаборатория в клинике Asmus</h1>
+                        <div class="hero__text text text_white">Современная цифровая методика CAD/CAM</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/09.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2"><span>CAD/CAM - это современная система</span> которая позволяет создавать высококачественные реставрации </h3>
+                        <div class="text-block__text">Благодаря этой передовой технологии с использованием компьютерного моделирования и фразерных станков мы можем предлагать нашим пациентам точные и эстетические зубные протезы и реставрации </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">Преимущества зуботехнической лаборатории <br> в нашей клинике: </h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/05.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Наши специалисты обладают большим опытом.</h3>
+                                <div class="about__text text-2">Мы гарантируем высокое качество нашей работы и предоставляем индивидуальный подход к каждому пациенту.</div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Высокая точность</div>
+                                <div class="about__item">Скорость выполнения работы </div>
+                                <div class="about__item">Широкий спектр применений </div>
+                                <div class="about__item">Индивидуальный подход</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/08.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

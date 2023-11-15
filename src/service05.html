@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Гигиена"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title"><span>Профессиональная гигиена</span> <br> полости рта в клинике Asmus</h1>
+                        <div class="hero__text text">Ультразвуковая чистка, снятие налета</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/06.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2"><span>Профессиональная гигиена</span> <br> полости рта играет ключевую роль</h3>
+                        <div class="text-block__text">в поддержании общего благополучия и создании красивой улыбки. В клинике Asmus мы поможем достичь вам сияющих результатов!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">Этапы профессиональной гигиены</h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/02.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Профессиональная гигиена включает в себя ряд процедур:</h3>
+                                <div class="about__text text-2">Важно помнить, что каждый случай уникален и этапы могут отличаться в зависимости от индивидуальных особенностей пациента </div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Удаление окрашенного налета </div>
+                                <div class="about__item">Удаление зубных отложений</div>
+                                <div class="about__item">Полировка зубов</div>
+                                <div class="about__item">Укрепление эмали</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/06.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

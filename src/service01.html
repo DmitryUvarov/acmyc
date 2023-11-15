@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Имплантация"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title"><span>Хирургическое лечение</span> <br> в клинике Asmus</h1>
+                        <div class="hero__text text">Заботимся о вашей улыбке</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/02.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2">В современной стоматологии <span>имплантация</span> - это...</h3>
+                        <div class="text-block__text">один из самых эффективных методов замены отсутствующих зубов. Импланты являются надежным и долговечным решением для восстановления утраченной улыбки и функциональности</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">Этапы</h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/01.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Этапы имплантации разделены на несколько ключевых шагов</h3>
+                                <div class="about__text text-2">Важно помнить, что каждый случай уникален и этапы могут отличаться в зависимости от индивидуальных особенностей пациента</div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Консультация </div>
+                                <div class="about__item">Установка импланта</div>
+                                <div class="about__item">Период заживления</div>
+                                <div class="about__item">Установка коронки на имплант</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/02.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

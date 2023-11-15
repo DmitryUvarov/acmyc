@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Компьютерная томография"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title"><span>Компьютерная томография</span> <br> зубов в клинике Asmus</h1>
+                        <div class="hero__text text">3D КТ челюсти, КЛКТ</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/08.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2"><span>Компьютерная томография - это </span> <br> высокоточный метод обследования</h3>
+                        <div class="text-block__text">Этот инструмент позволяет получить трехмерное изображение структур челюстно-лицевой зоны. Мы используем КТ для точного диагностирования различных заболеваний и проблем в полости рта. </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">Преимущества компьютерной томографии <br> в нашей клинике: </h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/04.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Клиника оснащена современным компьютерным томографом</h3>
+                                <div class="about__text text-2">Наши специалисты имеют большой опыт в выполнении КТ-сканирования. Мы стремимся обеспечить наивысший уровень диагностики для каждого пациента.</div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Высокая точность диагностики</div>
+                                <div class="about__item">Безопасность</div>
+                                <div class="about__item">Комфорт</div>
+                                <div class="about__item">Улучшение плана лечения</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/04.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

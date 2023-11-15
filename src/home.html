@@ -14,7 +14,7 @@
 					<div class="hero__body">
 						<h1 class="hero__title title">Стоматологическая <br> клиника Asmus</h1>
 						<div class="hero__text text">Заботимся о вашей улыбке</div>
-						<button class="hero__button button">Записаться на приём</button>
+						<button class="hero__button button" data-popup="#contact">Записаться на приём</button>
 						<div class="hero__bg-ibg"><img src="@img/hero/01.jpg" alt=""></div>
 					</div>
 					<div class="hero__items" data-watch>
@@ -142,16 +142,9 @@
 				</div>
 			</section>
 
-			<!-- <section class="test">
-				<div class="test__container">
-					<div class="test__body">
-
-					</div>
-				</div>
-			</section> -->
-
 		</main>
 		@@include('html/_footer.htm',{})
+		@@include('html/_popup.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>

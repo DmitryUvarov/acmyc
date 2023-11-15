@@ -1,10 +1,15 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="contact" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<div class="popup__title title title_white">Оставьте свои данные <br> и мы свяжемся с вами в ближайшее время!</div>
+
+			<form data-dev action="#" class="popup__form form-popup">
+				<input autocomplete="off" type="text" name="form[]" data-required placeholder="Ваше имя*" class="form-popup__input">
+				<input autocomplete="off" type="text" name="form[]" data-phone data-required="phone" placeholder="Ваш телефон*" class="form-popup__input">
+				<button type="submit" class="form-popup__button button">Записаться на приём</button>
+			</form>
+
 		</div>
 	</div>
 </div>

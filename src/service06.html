@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Брекеты"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title"><span>Ортодонтическое лечение</span> <br> в клинике Asmus</h1>
+                        <div class="hero__text text">Исправление прикуса брекетами</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/07.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2"><span>Ортодонтическое лечение - это</span> <br> коррекция позиции зубов</h3>
+                        <div class="text-block__text">Если у вас есть проблемы с неправильным прикусом, неравномерным расположением зубов, то ортодонтическое лечение в клинике Asmus станет для вас идеальным решением!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">Преимущества ортодонтического лечения <br> в нашей клинике:</h2>
+                    <div class="about__body">
+                        <div class="about__image-ibg"><img src="@img/about/03.jpg" alt=""></div>
+                        <div class="about__content">
+                            <div class="about__content__body">
+                                <h3 class="about__title-2 title-2">Наши опытные ортодонты применяют передовые методики</h3>
+                                <div class="about__text text-2">Мы работаем с пациентами разных возрастов - от детей до взрослых. И предлагаем индивидуальный подход к каждому случаю. Благодаря лечению у нас вы получите:</div>
+                            </div>
+                            <div class="about__items">
+                                <div class="about__item">Красивую, эстетичную улыбку</div>
+                                <div class="about__item">Здоровье полости рта </div>
+                                <div class="about__item">Комфорт</div>
+                                <div class="about__item">Индивидуальный подход</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/07.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

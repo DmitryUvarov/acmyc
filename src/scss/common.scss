@@ -8,11 +8,19 @@
   span {
     color: #1e76fe;
   }
+
+  &_white {
+    color: #fff;
+  }
 }
 .text {
   @include adaptiveValue("font-size", 20, 18);
   font-weight: 500;
   line-height: 120%; /* 24/20 */
+
+  &_white {
+    color: #fff;
+  }
 
   p {
     &:not(:last-child) {
@@ -58,6 +66,10 @@
     border-radius: toRem(40);
     display: inline-block;
     vertical-align: middle;
+  }
+
+  span {
+    color: #1e76fe;
   }
 }
 .text-2 {
@@ -136,6 +148,52 @@
 }
 
 //========================================================================================================================================================
+
+.navigation {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include adaptiveValue("column-gap", 20, 10);
+  width: 100%;
+
+  &__button {
+    cursor: pointer;
+    pointer-events: all;
+    @include adaptiveValue("width", 100, 50);
+    @include adaptiveValue("height", 100, 50);
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adaptiveValue("font-size", 30, 20);
+
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #14213d;
+        color: #fff;
+      }
+    }
+
+    &.swiper-button-disabled {
+      cursor: default;
+      opacity: 0.6;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: #fff;
+          color: #1e76fe;
+        }
+      }
+    }
+  }
+}
+
 //========================================================================================================================================================
 //========================================================================================================================================================
 

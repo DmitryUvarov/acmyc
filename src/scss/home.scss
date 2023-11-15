@@ -147,7 +147,6 @@
     overflow: hidden;
 
     padding-bottom: percent(392, 615);
-    height: fit-content;
   }
 
   &__content {
@@ -182,15 +181,15 @@
   }
 
   &__item {
+    height: 100%;
     padding: toRem(15);
     display: flex;
     gap: toRem(10);
     flex-direction: column;
-    justify-content: space-between;
     border-radius: toRem(25);
     background-color: #e3e3e3;
 
-    @include adaptiveValue("min-height", 148, 125, 0, 1230, 767);
+    // @include adaptiveValue("min-height", 148, 125, 0, 1230, 767);
 
     font-size: 16px;
     font-weight: 500;
@@ -204,6 +203,8 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 120%; /* 120% */
+
+      @include adaptiveValue("margin-bottom", 30, 15);
     }
   }
 }
@@ -284,7 +285,8 @@
   &__item-title {
   }
 
-  &__item-ico {
+  &__item-ico,
+  &__item-circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,6 +299,10 @@
     img {
       max-width: 100%;
     }
+  }
+
+  &__item-circle {
+    background-color: #1e76fe;
   }
 }
 
@@ -325,6 +331,33 @@
 
   &__title {
     @include adaptiveValue("margin-bottom", 30, 20);
+  }
+
+  &__title-2 {
+    @include adaptiveValue("font-size", 32, 20);
+  }
+
+  &__text {
+    max-width: toRem(500);
+  }
+}
+
+//========================================================================================================================================================
+
+.text-block {
+  background-color: #e3e3e3;
+  border-radius: toRem(26);
+  display: grid;
+  column-gap: toRem(10);
+  row-gap: toRem(20);
+  @media (min-width: $mobile) {
+    grid-template-columns: percent(615, 1200) 1fr;
+  }
+
+  padding: toRem(35) toRem(30) toRem(45);
+
+  @media (max-width: $mobile) {
+    padding: toRem(25) toRem(15) toRem(30);
   }
 
   &__title-2 {

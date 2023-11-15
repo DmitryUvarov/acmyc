@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Хирургическое лечение"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title"><span>Хирургическое лечение</span> <br> в клинике Asmus</h1>
+                        <div class="hero__text text">Заботимся о вашей улыбке</div>
+                        <button class="hero__button button" data-popup="#contact">Записаться на приём</button>
+                        <div class="hero__bg-ibg"><img src="@img/hero/03.jpg" alt=""></div>
+                    </div>
+                    <div class="hero__text-block text-block">
+                        <h3 class="text-block__title title-2"><span>Хирургическое лечение</span> <br> в стоматологии является</h3>
+                        <div class="text-block__text">важной составляющей комплексного подхода к уходу за зубами и полостью рта. Оно помогает пациентам улучшить их самочувствие и качество жизни.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__container">
+                    <h2 class="services__title title">Варианты хирургического лечения</h2>
+                    <div class="services__body">
+                        <div class="services__content">
+                            <h3 class="services__title-2 title-2">Клиника Asmus предоставляет все виды <span>хирургического</span> лечения</h3>
+                        </div>
+                        <div class="services__items">
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Удаление зубов мудрости</div>
+                                <div class="services__item-circle"></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Удаление разрушенных зубов</div>
+                                <div class="services__item-circle"></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Пластика десны</div>
+                                <div class="services__item-circle"></div>
+                            </a>
+                            <a href="#" class="services__item">
+                                <div class="services__item-title">Костная пластика</div>
+                                <div class="services__item-circle"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/_photo.htm',{})
+
+
+            @@include('html/_readmore_block.htm',{
+            "image_path":"img/readmore/03.jpg"
+            })
+
+            @@include('html/_contact.htm',{})
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
