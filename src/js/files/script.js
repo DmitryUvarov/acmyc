@@ -11,7 +11,7 @@ function pageLoad() {
     document.addEventListener('click', e => {
         const targetElement = e.target
 
-        if (targetElement.closest('.menu__item')) {
+        if (targetElement.closest('.menu__item') && targetElement.closest('.menu__item').querySelector('.menu__sublist')) {
             if (document.querySelector('.menu__item.open')) {
                 document.querySelector('.menu__item.open').classList.remove('open')
             }
