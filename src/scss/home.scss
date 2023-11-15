@@ -49,6 +49,12 @@
 
   &__title {
     @include adaptiveValue("margin-bottom", 25, 20);
+
+    @media (max-width: $mobile) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__text {
