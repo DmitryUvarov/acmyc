@@ -45,20 +45,22 @@
         z-index: -1;
       }
     }
-  }
 
-  &__title {
-    @include adaptiveValue("margin-bottom", 25, 20);
-
-    @media (max-width: $mobile) {
-      br {
-        display: none;
+    &_bottom {
+      @media (max-width: $mobile) {
+        justify-content: flex-end;
       }
     }
   }
 
+  &__title {
+    @include adaptiveValue("margin-bottom", 25, 20);
+  }
+
   &__text {
-    margin-bottom: toRem(50);
+    &:not(:last-child) {
+      margin-bottom: toRem(50);
+    }
   }
 
   &__button {
