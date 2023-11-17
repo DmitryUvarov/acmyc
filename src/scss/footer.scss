@@ -2,19 +2,22 @@
 .footer {
   @include adaptiveValue("padding-top", 65, 35);
   &__container {
+    border-radius: toRem(25);
+    background-color: #0f0f0f;
+    display: grid;
+    gap: toRem(20);
+    @include adaptiveValue("gap", 30, 20);
+
+    @include adaptiveValue("padding-top", 40, 25);
+    @include adaptiveValue("padding-bottom", 40, 45);
+    @include adaptiveValue("padding-right", 30, 15);
+    @include adaptiveValue("padding-left", 30, 15);
   }
 
   &__body {
     display: flex;
     @include adaptiveValue("column-gap", 45, 15, 0, 1230, 991);
     row-gap: toRem(20);
-    border-radius: toRem(25);
-    background-color: #0f0f0f;
-
-    @include adaptiveValue("padding-top", 40, 25);
-    @include adaptiveValue("padding-bottom", 40, 45);
-    @include adaptiveValue("padding-right", 30, 15);
-    @include adaptiveValue("padding-left", 30, 15);
 
     @media (max-width: $pc) {
       justify-content: space-between;
@@ -117,6 +120,19 @@
 
     &:not(:last-child) {
       margin-bottom: toRem(30);
+    }
+  }
+
+  &__copy {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptiveValue("font-size", 18, 16);
+    line-height: 122.2%; /* 22/18 */
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
     }
   }
 }
